@@ -19,4 +19,5 @@ columnmean <- function(z){
     means[i] <- mean(z[,i], na.rm = T)
   }
   means
+  means
 }

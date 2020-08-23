@@ -1,0 +1,12 @@
+unzip(zipfile = "/home/liperas/Downloads/quiz1_data.zip")
+w <- read.csv(file = "/home/liperas/Downloads/quiz1_data/hw1_data.csv")
+w[47,]
+o <- is.na(w$Ozone)
+sum(o)
+mean(w$Ozone, na.rm = T)
+f <- subset(w, Temp > 90 & Ozone > 31)
+mean(f$Solar.R)
+g <- subset(w, Month == 6)
+mean(g$Temp)
+h <- subset(w, Month == 5)
+max(h$Ozone, na.rm = T)

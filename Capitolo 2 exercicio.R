@@ -9,6 +9,7 @@ setwd(my.dir)
 link.book <- "https://www.msperlin.com/blog/files/pafdr%20files/Code_Data_pafdR.zip"
 local.file <- "Book.zip"
 dw.file <- download.file(url = link.book, destfile = local.file)
+unzip("Book.zip")
 file.remove("book.zip")
 list.files(path = "Book", full.names = T, recursive = T)
 pkg.folder <- Sys.getenv("R_LIBS_USER")
